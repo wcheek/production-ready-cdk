@@ -1,5 +1,6 @@
 {
   "name": "production-ready-cdk",
+  "description": "A CDK project to learn production CDK",
   "scripts": {
     "build": "npx projen build",
     "bundle": "npx projen bundle",
@@ -24,30 +25,40 @@
     "watch": "npx projen watch",
     "projen": "npx projen"
   },
+  "author": {
+    "name": "Wesley Cheek",
+    "organization": false
+  },
   "devDependencies": {
-    "@types/jest": "*",
+    "@types/jest": "^28.1.6",
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk": "^2.1.0",
-    "esbuild": "*",
+    "aws-cdk": "^2.35.0",
+    "esbuild": "^0.14.53",
     "eslint": "^8",
-    "eslint-import-resolver-node": "*",
-    "eslint-import-resolver-typescript": "*",
-    "eslint-plugin-import": "*",
-    "jest": "*",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-import-resolver-typescript": "^3.4.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^28.1.3",
     "jest-junit": "^13",
-    "json-schema": "*",
+    "json-schema": "^0.4.0",
     "npm-check-updates": "^15",
-    "projen": "*",
-    "ts-jest": "*",
-    "ts-node": "*",
-    "typescript": "*"
+    "projen": "^0.60.18",
+    "ts-jest": "^28.0.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.1.0",
+    "aws-cdk-lib": "^2.35.0",
     "constructs": "^10.0.5"
   },
+  "keywords": [
+    "AWS CDK",
+    "Deployment",
+    "Typescript",
+    "projen"
+  ],
   "license": "Apache-2.0",
   "version": "0.0.0",
   "jest": {
