@@ -1,11 +1,11 @@
-import { App } from 'aws-cdk-lib';
+import * as cdk from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
-import { MyStack } from '../src/main';
+import { LambdaStack } from '../src/main';
 
-test('Snapshot', () => {
-  const app = new App();
-  const stack = new MyStack(app, 'test');
-
+test('Lambda created', () => {
+  const app = new cdk.App();
+  const stack = new LambdaStack(app, 'LambdaStack');
   const template = Template.fromStack(stack);
-  expect(template.toJSON()).toMatchSnapshot();
+
+  template.resourceCountIs('AWS::Lambda::Function', 1);
 });

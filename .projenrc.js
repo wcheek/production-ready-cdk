@@ -1,9 +1,9 @@
-const { awscdk } = require("projen");
+const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkTypeScriptApp({
   authorName: 'Wesley Cheek',
-  cdkVersion: "2.35.0",
-  defaultReleaseBranch: "main",
-  name: "production-ready-cdk",
+  cdkVersion: '2.35.0',
+  defaultReleaseBranch: 'main',
+  name: 'production-ready-cdk',
   description: 'A CDK project to learn production CDK',
   repositoryUrl: 'https://github.com/wcheek/production-ready-cdk.git',
   keywords: [
